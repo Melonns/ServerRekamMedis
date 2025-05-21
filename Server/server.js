@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const db = require("./database.js");
 const moment = require("moment");
-require(dotenv).config();
+require('dotenv').config();
 // const ratelimit = require("express-rate-limit");
 
 const app = express();
