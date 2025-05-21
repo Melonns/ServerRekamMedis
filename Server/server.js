@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3000;
 
 // app.use(limiter);
 app.use(cors({
-  origin: 'https://clientrekammedis-production.up.railway.app/'
+  origin: 'https://clientrekammedis-production.up.railway.app'
 }));
 app.use(express.json());
 
