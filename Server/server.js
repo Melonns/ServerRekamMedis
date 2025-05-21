@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const db = require("./database.js");
 const moment = require("moment");
+require(dotenv).config();
 // const ratelimit = require("express-rate-limit");
 
 const app = express();
@@ -167,14 +168,3 @@ app.put("/data/edit/:id", (req, res) => {
 const server = app.listen(PORT, () => {
   console.log(`Server berjalan di http://localhost:${PORT}`);
 });
-
-// server.on("connection", (socket) => {
-//   console.log("🔌 New connection");
-
-//   socket.on("close", () => {
-//     console.log("❌ Connection closed");
-//   });
-// });
-
-// app.maxConnections = 100;
-// server.setTimeout(30000);
