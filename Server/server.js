@@ -15,7 +15,9 @@ const PORT = process.env.PORT || 3000;
 // });
 
 // app.use(limiter);
-app.use(cors());
+app.use(cors({
+  origin: 'https://rekam-medis-six.vercel.app/'
+}));
 app.use(express.json());
 
 // app.on("connection", (socket) => {
